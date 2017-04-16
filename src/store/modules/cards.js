@@ -1,7 +1,7 @@
 const state = {
   cardItem: {
     title: 'Riven morot',
-    comment: 'Ta en morot. Skala den och riv den. Man kan äta den till stekt palsternacka elle blanda i en sallad.',
+    comment: 'Ta en morot. Skala den och riv den. Man kan äta den till stekt palsternacka eller blanda i en sallad.',
     img: 'carrot.gif',
     typeImg: 'light-bulb.svg',
     user: 'veraveg',

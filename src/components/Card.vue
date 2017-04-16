@@ -4,7 +4,7 @@
     <img :src="'../../assets/card-img/' + card.img" v-alt="card.title">
     <div class='comment'>{{card.comment}}</div>
     <ul class='statusbar'>
-      <li>@{{card.user}}</li>
+      <li class='user'>@{{card.user}}</li>
       <li class='likes'>
         <img src="../../assets/img/heart.svg">
         <span>{{card.likes}}</span>
@@ -14,12 +14,17 @@
         <img :src="'../../assets/img/' + card.typeImg" alt='Idea'>
       </li>
     </ul>
+  <comments></comments>
   </div>
 </template>
 
 <script>
+import Comments from './Comments.vue'
 
 export default {
+  components: {
+    comments: Comments
+  },
   data() {
     return {
       card: this.$store.getters.cardItem
@@ -82,6 +87,11 @@ export default {
       display: flex;
       line-height: 4em;
       width: 100vw;
+    }
+
+    li.user {
+      font-style: italic;
+      font-weight: 300;
     }
 
     li {

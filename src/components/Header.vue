@@ -16,7 +16,7 @@
     top:0;
     width: 100%;
     height: 4em;
-    background-color: rgba(178, 195, 187, 0.7);
+    background-color: rgba(99, 141, 121, 0.7);
     color: #405B6D;
   }
 
