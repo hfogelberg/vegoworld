@@ -7,11 +7,11 @@
 </template>
 
 <script>
-import Card from './Card.vue'
+import CardlistItem from './CardlistItem.vue'
 
 export default {
   components: {
-    'card': Card
+    'card': CardlistItem
   },
   data() {
     return {
