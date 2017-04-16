@@ -13,6 +13,8 @@ html {
 }
 
 body, html {
+  background-color: #EDCDC2;
+  color: #405B6D;
   height: 100%;
   width: 100%;
   top: 0;
@@ -20,7 +22,7 @@ body, html {
 }
 
 /* Page layout */
-.content {
+/*.content {
   display: flex;
   -webkit-flex: row-wrap;
   -ms-flex: row-wrap;
@@ -28,36 +30,12 @@ body, html {
   width: 100vw;
   height: 100%;
   margin: 0 -0.5em;
-}
+}*/
 
-/* Fonts */
-h1 {
-  text-align: center;
-  font-size: 4em;
-  letter-spacing: 2px;
-  word-spacing: 4px;
-  margin-bottom: 20px;
-}
 
 /* Buttons */
 .btn-transparent {
   cursor: pointer;
   background-color: transparent;
   border: none;
-}
-
-ul.button-row {
-  list-style: none;
-  display: flex;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-}
-
-li {
-  flex: 0 0 auto;
-  margin: 0.2em;
-}
-
-li:nth-child(1) {
-  margin-right: auto;
 }
