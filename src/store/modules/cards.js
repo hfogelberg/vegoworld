@@ -6,9 +6,9 @@ const state = {
 
         {title: 'Banan', img: 'banana.jpeg', comment: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', typeImg: 'light-bulb.svg', user:'humusharry'},
 
-        {title: 'Bönor', img: 'beans.jpeg', comment: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', typeImg: 'light-bulb.svg', user:'vegputte'},
+        {title: 'Bönor', img: 'beans.jpeg', comment: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', typeImg: 'light-bulb.svg', user:'morotsmia'},
 
-          {title: 'Tomat', img: 'tomato.jpg', comment: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', typeImg: 'light-bulb.svg', user:'vegfia'},
+          {title: 'Tomat', img: 'tomato.jpg', comment: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', typeImg: 'light-bulb.svg', user:'yogijanne'},
 
             {title: 'Gröt', img: 'porridge.jpeg', comment: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', typeImg: 'light-bulb.svg', user:'humusharry'}
 ]

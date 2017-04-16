@@ -21,18 +21,6 @@ body, html {
   left: 0;
 }
 
-/* Page layout */
-/*.content {
-  display: flex;
-  -webkit-flex: row-wrap;
-  -ms-flex: row-wrap;
-  flex: row-wrap;
-  width: 100vw;
-  height: 100%;
-  margin: 0 -0.5em;
-}*/
-
-
 /* Buttons */
 .btn-transparent {
   cursor: pointer;
