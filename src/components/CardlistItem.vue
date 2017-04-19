@@ -5,7 +5,13 @@
     <p>{{card.comment}}</p>
     <div class='footer'>
       <div class='user'>@{{card.user}}</div>
-      <div class='likes'><img src="../../assets/img/heart.svg"><span>{{card.likes}}</span></div>
+      <div class="comments">
+        <img src="../../assets/img/comments.svg" alt="Comments">
+        <span>{{card.comments}}</span>
+      </div>
+      <div class='likes'>
+        <img src="../../assets/img/heart.svg">
+        <span>{{card.likes}}</span></div>
       <div class='type'>
         <img :src="'../../assets/img/' + card.typeImg" alt='Idea'>
       </div>
@@ -67,13 +73,13 @@ export default {
     font-size: 1.3em;
   }
 
-  .type img {
+  .footer img {
     height: 1.8em;
     width: auto;
     background-color: #CA9D8E;
   }
 
-  .likes img {
+  .footer img {
     height: 1.2em;
     width: auto;
     background-color: #CA9D8E;

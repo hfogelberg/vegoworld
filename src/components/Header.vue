@@ -40,12 +40,6 @@
     line-height: 4em;
   }
 
-  li {
-    flex: 0 0 auto;
-    margin: 0.2em;
-    display: flex;
-    align-items: center;
-  }
 
   input[type=search]{
     background-color: yellow;
@@ -55,6 +49,13 @@
     margin-bottom: 0.4em;
     background-color: #FFFBF9;
     border-radius: 20px;
+  }
+
+  li {
+    flex: 0 0 auto;
+    margin: 0.2em;
+    display: flex;
+    align-items: center;
   }
 
   li:nth-child(1) {

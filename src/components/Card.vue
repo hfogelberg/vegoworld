@@ -16,14 +16,14 @@
         </li>
       </ul>
       <comments></comments>
+      <card-footer></card-footer>
     </div>
-    <card-footer class='fixed-footer'></card-footer>
   </div>
 </template>
 
 <script>
 import Comments from './Comments.vue'
-import Cardfooter from './Cardfooter'
+import Cardfooter from './Cardfooter.vue'
 
  export default {
   components: {
@@ -41,6 +41,8 @@ import Cardfooter from './Cardfooter'
 <style lang="css" scoped>
   .container {
       display: flex;
+      width: 100vw;
+      height: 100%;
   }
 
   .card {
@@ -74,19 +76,6 @@ import Cardfooter from './Cardfooter'
     justify-content: center;
   }
 
-  /*.type img {
-    height: 1.8em;
-    width: auto;
-    background-color: #EDCDC2;
-  }
-
-  .likes img {
-    height: 1.2em;
-    width: auto;
-    background-color: #EDCDC2;
-    margin-right: 0.2em;
-  }*/
-
   .statusbar img {
     height: 1.5em;
     width: auto;
@@ -117,8 +106,4 @@ import Cardfooter from './Cardfooter'
     li:nth-child(1) {
     margin-right: auto;
   }
-
-    .fixed-footer {
-      align-self: flex-end;
-    }
 </style>
