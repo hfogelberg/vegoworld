@@ -3,8 +3,14 @@ let postsApi = (app, mongoose)  => {
 
   // GET posts
   app.get('/api/posts', (req, res) => {
-    console.log('GET posts');
-    res.send({message: 'Fetch posts called'});
+    Posts.find()
+    .then((posts)=>{
+      res.send({posts})
+    })
+    .catch((err)=>{
+      console.log('Error fetching posts', err);
+      res.status(500).send();
+    });
   })
 
   // POST posts
