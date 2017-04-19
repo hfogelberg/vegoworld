@@ -10,7 +10,7 @@
         </button>
       </li>
       <li><img src='../../assets/img/bookmark.svg' ></li>
-      <li><router-link to='/user'><img src='../../components/user.svg>'</router-link></li>
+      <li><router-link to='/user'><img src='../../assets/img/user.svg'></router-link></li>
     </ul>
   </header>
 </template>

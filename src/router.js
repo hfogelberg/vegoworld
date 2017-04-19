@@ -9,7 +9,7 @@ const router = new VueRouter({
     { path: '/', component: Cardlist},
     { path: '/cards', component: Cardlist },
     { path: '/card/:id', component: Card},
-    { pat: '/user', components: User}
+    { path: '/user', component: User}
   ],
 });
 
