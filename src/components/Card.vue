@@ -9,12 +9,12 @@
         <img src="../../assets/img/heart.svg">
         <span>{{card.likes}}</span>
       </li>
-
+      <li><img src='../../assets/img/bookmark.svg' ></li>
       <li class='type'>
         <img :src="'../../assets/img/' + card.typeImg" alt='Idea'>
       </li>
     </ul>
-  <comments></comments>
+    <comments></comments>
   </div>
 </template>
 
@@ -23,7 +23,8 @@ import Comments from './Comments.vue'
 
 export default {
   components: {
-    comments: Comments
+    'comments': Comments,
+    'card-footer': Cardfooter
   },
   data() {
     return {
@@ -65,7 +66,7 @@ export default {
     justify-content: center;
   }
 
-  .type img {
+  /*.type img {
     height: 1.8em;
     width: auto;
     background-color: #EDCDC2;
@@ -76,30 +77,40 @@ export default {
     width: auto;
     background-color: #EDCDC2;
     margin-right: 0.2em;
-  }
+  }*/
 
+  .statusbar img {
+    height: 1.5em;
+    width: auto;
+    background-color: #EDCDC2;
+    margin-right: 0.2em;
+  }
 
   ul.statusbar {
     margin-top: 2em;
-      padding-left: 4em;
-      padding-right: 4em;
-      list-style: none;
-      display: flex;
-      line-height: 4em;
-      width: 100vw;
-    }
+    padding-left: 4em;
+    padding-right: 4em;
+    list-style: none;
+    display: flex;
+    line-height: 4em;
+    width: 100vw;
+  }
 
     li.user {
-      font-style: italic;
-      font-weight: 300;
-    }
+    font-style: italic;
+    font-weight: 300;
+  }
 
     li {
-      flex: 0 0 auto;
-      margin: 0.2em;
-    }
+    flex: 0 0 auto;
+    margin: 0.2em;
+  }
 
     li:nth-child(1) {
-      margin-right: auto;
+    margin-right: auto;
+  }
+
+    .footer {
+      align-self: flex-end;
     }
 </style>

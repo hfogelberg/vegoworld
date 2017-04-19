@@ -3,8 +3,13 @@
     <ul>
       <li><h1><router-link to='/'>Vegoworld</router-link></h1><li>
 
-      <li><router-link to='/about'>About</router-link></li>
-      <li><router-link to='/contact'>Contact</router-link></li>
+      <li><input type='search' class='input-search'></li>
+      <li>
+        <button @click='search' class='btn-transparent btn-search'>
+          <img src='../../assets/img/magnifier.svg' >
+        </button>
+      </li>
+      <li><img src='../../assets/img/bookmark.svg' ></li>
     </ul>
   </header>
 </template>
@@ -16,12 +21,14 @@
     top:0;
     width: 100%;
     height: 4em;
+    line-height: 4em;
     background-color: rgba(99, 141, 121, 0.7);
     color: #405B6D;
   }
 
   header h1 {
     font-size: 1.6em;
+    font-weight: 400;
   }
 
   header ul {
@@ -29,12 +36,25 @@
     margin-right: 1em;
     list-style: none;
     display: flex;
+    align-items: center;
     line-height: 4em;
   }
 
   li {
     flex: 0 0 auto;
     margin: 0.2em;
+    display: flex;
+    align-items: center;
+  }
+
+  input[type=search]{
+    background-color: yellow;
+    height: 3.2em;
+    width: 30ch;
+    margin-right: 0.5em;
+    margin-bottom: 0.4em;
+    background-color: #FFFBF9;
+    border-radius: 20px;
   }
 
   li:nth-child(1) {

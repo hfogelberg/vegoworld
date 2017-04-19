@@ -1,5 +1,5 @@
 <template lang="html">
-  <a href="/card/1" class="card">
+  <div class="card" @click='select'>
     <h2>{{card.title}}</h2>
     <img :src="'../../assets/card-img/' + card.img" v-alt="card.title">
     <p>{{card.comment}}</p>
@@ -10,12 +10,18 @@
         <img :src="'../../assets/img/' + card.typeImg" alt='Idea'>
       </div>
     </div>
-  </a>
+  </div>
 </template>
 
 <script>
+
 export default {
-  props: ['card']
+  props: ['card'],
+  methods: {
+    select() {
+      this.$parent.displayDetail(this.card.id)
+    }
+  }
 }
 </script>
 
@@ -34,6 +40,7 @@ export default {
     display: flex;
     flex-direction: column;
     margin: 1em;
+    cursor: pointer;
   }
 
   img {
