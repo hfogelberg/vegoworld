@@ -1,27 +1,31 @@
 <template lang="html">
-  <div class="card">
-    <h1>{{card.title}}</h1>
-    <img :src="'../../assets/card-img/' + card.img" v-alt="card.title">
-    <div class='comment'>{{card.comment}}</div>
-    <ul class='statusbar'>
-      <li class='user'>@{{card.user}}</li>
-      <li class='likes'>
-        <img src="../../assets/img/heart.svg">
-        <span>{{card.likes}}</span>
-      </li>
-      <li><img src='../../assets/img/bookmark.svg' ></li>
-      <li class='type'>
-        <img :src="'../../assets/img/' + card.typeImg" alt='Idea'>
-      </li>
-    </ul>
-    <comments></comments>
+  <div class='container'>
+    <div class="card">
+      <h1>{{card.title}}</h1>
+      <img :src="'../../assets/card-img/' + card.img" v-alt="card.title">
+      <div class='comment'>{{card.comment}}</div>
+      <ul class='statusbar'>
+        <li class='user'>@{{card.user}}</li>
+        <li class='likes'>
+          <img src="../../assets/img/heart.svg">
+          <span>{{card.likes}}</span>
+        </li>
+        <li><img src='../../assets/img/bookmark.svg' ></li>
+        <li class='type'>
+          <img :src="'../../assets/img/' + card.typeImg" alt='Idea'>
+        </li>
+      </ul>
+      <comments></comments>
+    </div>
+    <card-footer class='fixed-footer'></card-footer>
   </div>
 </template>
 
 <script>
 import Comments from './Comments.vue'
+import Cardfooter from './Cardfooter'
 
-export default {
+ export default {
   components: {
     'comments': Comments,
     'card-footer': Cardfooter
@@ -35,6 +39,10 @@ export default {
 </script>
 
 <style lang="css" scoped>
+  .container {
+      display: flex;
+  }
+
   .card {
     margin-top: 5em;
     width: 100vw;
@@ -110,7 +118,7 @@ export default {
     margin-right: auto;
   }
 
-    .footer {
+    .fixed-footer {
       align-self: flex-end;
     }
 </style>
