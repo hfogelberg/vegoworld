@@ -1,9 +1,7 @@
 let api = (app, mongoose) => {
-  // let {userApi} = require('./userApi'),
-  //      {haikuApi} = require('./haikuApi');
-  //
-  // userApi(app, mongoose);
-  // haikuApi(app, mongoose);
+    let {postsApi} = require('./modules/posts');
+
+    postsApi(app, mongoose);
 
   app.get('/api/', (req, res) => {
     res.send({'message': 'API is alive'});
