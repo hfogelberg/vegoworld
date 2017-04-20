@@ -6,25 +6,38 @@
       <li><input type='search' class='input-search'></li>
       <li>
         <button @click='search' class='btn-transparent btn-search'>
-          <img src='../../assets/img/magnifier.svg' >
+          <img src='../assets/img/magnifier.svg' >
         </button>
       </li>
-      <li><img src='../../assets/img/bookmark.svg' ></li>
-      <li><router-link to='/user'><img src='../../assets/img/user.svg'></router-link></li>
+      <li><img src='../assets/img/bookmark.svg' ></li>
+      <li><router-link to='/user'><img src='../assets/img/user.svg'></router-link></li>
     </ul>
   </header>
 </template>
 
+<script>
 
-<style lang="css" scoped>
+export default {
+  methods: {
+    search() {
+      console.log('Search clicked');
+    }
+  }
+}
+</script>
+
+
+<style lang="scss" scoped>
+  @import '../assets/styles/vars';
+
   header {
     position: fixed;
     top:0;
     width: 100%;
     height: 4em;
     line-height: 4em;
-    background-color: rgba(99, 141, 121, 0.7);
-    color: #405B6D;
+    background-color: $header-background-color;
+    color: $text-color;
   }
 
   header h1 {
@@ -65,7 +78,7 @@
 
   a {
     font-size: 1.2em;
-    color: rgba(236, 240, 241,1.0);
+    color: $nav-arrow-color;
     font-weight: 300;
   }
 

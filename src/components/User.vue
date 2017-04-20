@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="user-card">
-    <img src="../../assets/card-img/bugs_bunny.jpg" alt="Avatar">
+    <img src="../../card-img/bugs_bunny.jpg" alt="Avatar">
     <div class= 'description'>
       <h1>@Gramse</h1>
       <div class='user-bio'>Jag är en 14 år gammal Västgötaspets som älskar morötter och sojakorv. Jag hade gärna velat bo på en gård där jag kan jaga höns. Mina hobbies är att vattna palmer och rota runt vid soptunnor.
@@ -8,7 +8,7 @@
         <button type="button" name="button" @click='follow'>Följ @Gramse</button>
         </div>
       <div class="posts">
-        <img src='../../assets/img/pen.svg'><span><h3>@Gramse har skrivit 467 inlägg</h3></span>
+        <img src='../assets/img/pen.svg'><span><h3>@Gramse har skrivit 467 inlägg</h3></span>
       </div>
 
     </div>
@@ -20,7 +20,9 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
+  @import '../assets/styles/vars';
+
   .user-card {
     margin-top: 6em;
     width: 100vw;
@@ -48,7 +50,7 @@ export default {
   .user-bio {
     display: flex;
     flex-direction: column;
-    border: 3px solid #638D79;
+    border: 3px solid $comment-border-color;
     border-radius: 20px;
     padding: 1em;
     max-width: 75ch;
@@ -60,7 +62,7 @@ export default {
   button {
     margin-right: 2em;
     margin-top: 2em;
-    background-color: #22ce7c;
+    background-color: $green-text-color;
     height: 2.5em;
     font-size: 1.3em;
     font-weight: 400;

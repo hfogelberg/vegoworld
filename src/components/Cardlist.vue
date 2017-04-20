@@ -28,7 +28,9 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
+  @import '../assets/styles/vars';
+
   .cards {
     margin-top: 4em;
     padding: 1em;

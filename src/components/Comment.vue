@@ -11,15 +11,17 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
+  @import '../assets/styles/vars';
+
   .comment {
-    color: #5D7381;
+    color: $comment-text-color;
     font-size: 1.2em;
     margin-bottom: 1em;
     width: 60vw;
     height: auto;
     padding: 1em;
-    border: 2px solid #7E8D98;
+    border: 2px solid $comment-border-color;
     border-radius: 20px;
   }
 

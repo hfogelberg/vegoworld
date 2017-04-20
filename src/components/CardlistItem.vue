@@ -1,16 +1,16 @@
 <template lang="html">
   <div class="card" @click='select'>
     <h2>{{card.title}}</h2>
-    <img :src="'../../assets/card-img/' + card.img" v-alt="card.title">
+    <img :src="'../../card-img/' + card.img" v-alt="card.title">
     <p>{{card.comment}}</p>
     <div class='footer'>
       <div class='user'>@{{card.user}}</div>
       <div class="comments">
-        <img src="../../assets/img/comments.svg" alt="Comments">
+        <img src="../assets/img/comments.svg" alt="Comments">
         <span>{{card.comments}}</span>
       </div>
       <div class='likes'>
-        <img src="../../assets/img/heart.svg">
+        <img src="../assets/img/heart.svg">
         <span>{{card.likes}}</span></div>
       <div class='type'>
         <img :src="'../../assets/img/' + card.typeImg" alt='Idea'>
@@ -31,10 +31,8 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
-  h2 {
-      color: #43775E;
-  }
+<style lang="scss" scoped>
+@import '../assets/styles/vars';
 
   .card {
     padding: 0.5em;
@@ -42,7 +40,7 @@ export default {
     height: 33vw;
     border: 1 px solid black;
     border-radius: 20px;
-    background-color: #CA9D8E;
+    background-color: $background-color;
     display: flex;
     flex-direction: column;
     margin: 1em;
@@ -58,7 +56,7 @@ export default {
 
   p {
     padding: 0.5em;
-    color: #FFF5E8;
+    color: $light-text-color;
     flex-grow: 1;
     font-size: 1.2em;
   }
@@ -69,20 +67,20 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #FFFBF9;
+    color: $light-text-color;
     font-size: 1.3em;
   }
 
   .footer img {
     height: 1.8em;
     width: auto;
-    background-color: #CA9D8E;
+    background-color: $background-color;
   }
 
   .footer img {
     height: 1.2em;
     width: auto;
-    background-color: #CA9D8E;
+    background-color: $background-color;
     margin-right: 0.2em;
   }
 

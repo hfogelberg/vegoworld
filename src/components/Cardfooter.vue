@@ -1,8 +1,8 @@
 <template lang="html">
   <div class="card-footer">
     <ul>
-      <li><router-link to='/card/1'><img src='../../assets/img/arrow-left.svg'><span>Veg restaurang på Teneriffa</span></router-link></li>
-      <li><router-link to='/card/1'>Kan man ha skinskor?<span><img src='../../assets/img/arrow-right.svg'></span></router-link></li>
+      <li><router-link to='/card/1'><img src='../assets/img/arrow-left.svg'><span>Veg restaurang på Teneriffa</span></router-link></li>
+      <li><router-link to='/card/1'>Kan man ha skinskor?<span><img src='../assets/img/arrow-right.svg'></span></router-link></li>
     </ul>
   </div>
 </template>
@@ -12,15 +12,17 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
+  @import '../assets/styles/vars';
+
   .card-footer {
       position: fixed;
       bottom: 0;
       width: 100%;
       height: 3em;
       line-height: 3em;
-      background-color: rgba(99, 141, 121, 0.4);
-      color: #405B6D;
+      background-color: $footer-background-color;
+      color: $text-color;
   }
 
     ul {
@@ -46,7 +48,7 @@ export default {
     a {
       top: 0.9em;
       font-size: 1.2em;
-      color: rgba(236, 240, 241,1.0);
+      color: $nav-arrow-color;
       font-weight: 300;
     }
 

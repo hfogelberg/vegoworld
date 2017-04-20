@@ -2,15 +2,15 @@
   <div class='container'>
     <div class="card">
       <h1>{{card.title}}</h1>
-      <img :src="'../../assets/card-img/' + card.img" v-alt="card.title">
+      <img :src="'../assets/card-img/' + card.img" v-alt="card.title">
       <div class='comment'>{{card.comment}}</div>
       <ul class='statusbar'>
         <li class='user'>@{{card.user}}</li>
         <li class='likes'>
-          <img src="../../assets/img/heart.svg">
+          <img src="../assets/img/heart.svg">
           <span>{{card.likes}}</span>
         </li>
-        <li><img src='../../assets/img/bookmark.svg' ></li>
+        <li><img src='../assets/img/bookmark.svg' ></li>
         <li class='type'>
           <img :src="'../../assets/img/' + card.typeImg" alt='Idea'>
         </li>
@@ -38,7 +38,9 @@ import Cardfooter from './Cardfooter.vue'
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
+@import '../assets/styles/vars';
+
   .container {
       display: flex;
       width: 100vw;
@@ -71,7 +73,7 @@ import Cardfooter from './Cardfooter.vue'
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #405B6D;
+    color: $text-color;
     font-size: 1.3em;
     justify-content: center;
   }
@@ -79,7 +81,7 @@ import Cardfooter from './Cardfooter.vue'
   .statusbar img {
     height: 1.5em;
     width: auto;
-    background-color: #EDCDC2;
+    background-color: $background-color;
     margin-right: 0.2em;
   }
 
