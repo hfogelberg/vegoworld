@@ -1,5 +1,8 @@
 <template lang="html">
   <div class="cards">
+    <div class="button-row">
+      <router-link to='newpost' class='btn-new-post'><img src='../assets/img/plus.svg' alt='New post'> </router-link>
+    </div>
     <ul class="card-content">
       <li v-for='card in cards' v-bind:id='card.id'><card :card='card'></card></li>
     </ul>
@@ -44,4 +47,13 @@ export default {
     list-style: none;
   }
 
+  .button-row {
+    width: 100vw;
+    height: 4em;
+  }
+
+  .btn-new-post {
+    position: absolute;
+    right: 2em;
+  }
 </style>
